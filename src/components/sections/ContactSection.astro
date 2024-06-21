@@ -9,11 +9,11 @@ import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
 // Define the variables that will be used in this component
-const title: string = "Contact us";
+const title: string = "Contato";
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
-const formTitle: string = "Fill in the form below";
-const formSubTitle: string = "We'll get back to you in 1-2 business days.";
+  "Ficou interessado, e deseja participar do Clube do Embaixador? Entre em contato conosco.";
+const formTitle: string = "Preencha o formulário abaixo com as informações da sua empresa.";
+const formSubTitle: string = "Retornaremos o contato o mais breve possivel.";
 ---
 
 <!-- Contact Us -->
@@ -44,26 +44,36 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
                 id="hs-firstname-contacts"
-                label="First Name"
+                label="Nome"
+                name="hs-firstname-contacts"
+              />
+              <PhoneInput id="hs-phone-number" />
+            </div>
+            <TextInput
+                id="hs-firstname-contacts"
+                label="Empresa"
                 name="hs-firstname-contacts"
               />
               <TextInput
-                id="hs-lastname-contacts"
-                label="Last Name"
+                id="hs-firstname-contacts"
+                label="Cidade"
                 name="hs-firstname-contacts"
               />
-            </div>
+              <TextInput
+                id="hs-firstname-contacts"
+                label="Segmento"
+                name="hs-firstname-contacts"
+              />
             <EmailContactInput id="hs-email-contacts" />
-            <PhoneInput id="hs-phone-number" />
-            <TextAreaInput
-              id="hs-about-contacts"
-              label="Details"
-              name="hs-about-contacts"
-            />
+            <TextInput
+                id="hs-firstname-contacts"
+                label="Mensagem"
+                name="hs-firstname-contacts"
+              />
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Send Message" />
+            <AuthBtn title="Enviar" />
           </div>
 
           <div class="mt-3 text-center">
@@ -76,39 +86,30 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
 
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
-        <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
-          isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
-        </ContactIconBlock>
 
         <ContactIconBlock
-          heading="FAQ"
-          content="Explore our FAQ for quick, clear answers to common queries."
+          heading="Perguntas Frequentes"
+          content="Explore nossas Perguntas Frequentes para um rápido entendimento do negócio."
           isLinkVisible={true}
-          linkTitle="Visit FAQ"
+          linkTitle="Dúvidas"
           linkURL="#"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
+          heading="Visite nosso escritorio"
+          content="Florianóplis - Santa Catarina"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
+          addressContent="Rua tal, Centro"
           ><Icon name="mapPin" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
+          heading="Entre em contato por E-mal"
+          content="Prefere contato direto por e-mail? Não tem problema, nos envie um e-mail com uma proposta "
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
+          linkTitle="dev@cashtech.app"
           linkURL="#"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>

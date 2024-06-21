@@ -1,36 +1,55 @@
 ---
-const {
-  label = "Search",
-  title = Astro.currentLocale === "fr" ? "S'abonner" : "Subscribe",
-  id = "footer-input",
-} = Astro.props;
+import PrimaryCTA from "../../buttons/PrimaryCTA.astro";
 
-interface Props {
-  label?: string;
-  title?: string;
-  id?: string;
-}
 
-const placeholder = Astro.currentLocale === "fr" ? "Entrez votre email" : "Enter your email";
 ---
 
-<div
-  class="mt-4 flex flex-col items-center gap-2 rounded-lg bg-neutral-200 p-2 dark:bg-neutral-800 sm:flex-row sm:gap-3"
->
-  <div class="w-full">
-    <label for={id} class="sr-only">{label}</label>
+
+<h3 class=" text-neutral-800 dark:text-neutral-200 ">
+  Ficou interessado? Entre em contato conosco.
+ </h3>
+<div class="mt-4 flex flex-col items-center gap-2  rounded-lg   p-2 dark:bg-neutral-800 sm:flex-row sm:gap-3">
+  <div class="w-700  flex flex-col">
     <input
       type="text"
-      id={id}
-      name="footer-input"
+      name="name"
       class="block w-full rounded-lg border-transparent bg-neutral-100 px-4 py-3 text-sm text-neutral-600 focus:border-orange-400 focus:ring-orange-400 disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-neutral-700 dark:text-gray-300 dark:placeholder:text-neutral-300"
-      placeholder={placeholder}
+      placeholder='Nome'
     />
-  </div>
-  <a
-    class="inline-flex w-full items-center justify-center gap-x-2 whitespace-nowrap rounded-lg border border-transparent bg-orange-400 p-3 text-sm font-bold text-neutral-50 outline-none ring-zinc-500 transition duration-300 hover:bg-orange-500 focus-visible:ring disabled:pointer-events-none disabled:opacity-50 dark:ring-zinc-200 dark:focus:outline-none dark:focus:ring-1 sm:w-auto"
-    href="#"
-  >
-    {title}
-  </a>
+    <input
+      type="text"
+      name="email"
+      class="block my-2 w-full rounded-lg border-transparent bg-neutral-100 px-4 py-3 text-sm text-neutral-600 focus:border-orange-400 focus:ring-orange-400 disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-neutral-700 dark:text-gray-300 dark:placeholder:text-neutral-300"
+      placeholder='E-mail'
+    />
+    <input
+      type="text"
+      name="company"
+      class="block w-full rounded-lg border-transparent bg-neutral-100 px-4 py-3 text-sm text-neutral-600 focus:border-orange-400 focus:ring-orange-400 disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-neutral-700 dark:text-gray-300 dark:placeholder:text-neutral-300"
+      placeholder='Empresa'
+    />
+    </div>
+    <div class='w-700 flex flex-col'>
+      <input
+      type="text"
+      name="city"
+      class="block w-full rounded-lg border-transparent bg-neutral-100 px-4 py-3 text-sm text-neutral-600 focus:border-orange-400 focus:ring-orange-400 disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-neutral-700 dark:text-gray-300 dark:placeholder:text-neutral-300"
+      placeholder='Cidade'
+    />
+    <input
+      type="text"
+      name="phone"
+      class="block w-full my-2 rounded-lg border-transparent bg-neutral-100 px-4 py-3 text-sm text-neutral-600 focus:border-orange-400 focus:ring-orange-400 disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-neutral-700 dark:text-gray-300 dark:placeholder:text-neutral-300"
+      placeholder='Telefone'
+    />
+    <input
+      type="text"
+      name="segment"
+      class="block w-full rounded-lg border-transparent bg-neutral-100 px-4 py-3 text-sm text-neutral-600 focus:border-orange-400 focus:ring-orange-400 disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-neutral-700 dark:text-gray-300 dark:placeholder:text-neutral-300"
+      placeholder='Segmento'
+    />
+    </div>
+</div>
+<div class="w-full justify-center p-2">
+<PrimaryCTA title='Enviar proposta' url='/#' noArrow  />
 </div>
