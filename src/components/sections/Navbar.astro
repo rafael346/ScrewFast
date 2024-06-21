@@ -7,6 +7,8 @@ import enStrings from "@utils/navigation.ts";
 import frStrings from "@utils/fr/navigation.ts";
 import BrandLogo from "@components/BrandLogo.astro";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
+import { Image } from "astro:assets";
+import src from "@images/icon-photo.png";
 
 // Select the correct translation based on the page's lang prop:
 const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
@@ -24,13 +26,16 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
   >
     <div class="flex items-center justify-between">
       <!-- Brand logo -->
-      <a
-        class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-        href={homeUrl}
-        aria-label="Brand"
-      >
-        <BrandLogo class="h-auto w-24" />
-      </a>
+      <div class="h-10">
+      <Image
+        src={src}
+        alt='logo'
+        class="w-full h-full scale-100 object-cover object-center"
+        draggable={"false"}
+        loading={"eager"}
+        format={"avif"}
+	    />
+    </div>
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">
         <button
