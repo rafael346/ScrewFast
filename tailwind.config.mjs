@@ -34,7 +34,7 @@ export default {
     },
     extend: {
       animation: {
-        'loop-scroll': 'loop-scroll 50s linear infinite',
+        'loop-scroll': 'loop-scroll 10s linear infinite',
       },
       keyframes: {
         'loop-scroll': {
