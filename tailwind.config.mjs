@@ -32,7 +32,19 @@ export default {
       red: colors.red, // Used for bookmark icon
       zinc: colors.zinc, // Used mainly for box-shadow
     },
-    extend: {},
+    extend: {
+      animation: {
+        'loop-scroll': 'loop-scroll 50s linear infinite',
+      },
+      keyframes: {
+        'loop-scroll': {
+          from: {
+            transform: 'translateX(0)'
+          },
+          to: { transform: 'translateX(-100%)' },
+        },
+      },
+    },
   },
   plugins: [
     require("tailwindcss/nesting"),
