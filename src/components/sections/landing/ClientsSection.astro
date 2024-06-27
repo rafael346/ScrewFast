@@ -1,6 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-
+import logo1 from "@images/logo6.png";
+import logo2 from "@images/logo10.png";
+import logo3 from "@images/logo15.png";
+import logo4 from "@images/logo17.png";
+import logo5 from "@images/logo20.png";
+import logo6 from "@images/logo22.png";
 // Define props from Astro
 const { title, subTitle } = Astro.props;
 
@@ -35,22 +40,68 @@ interface Props {
     <!-- Clients Group SVGs -->
     <!-- First -->
  
-    <img src="https://r2.cashtech.company/stores%2F02ejcHyfYenZeunK3jpI.png" />
   
-   
+    <Image
+    src={logo1}
+    alt='logo 1'
+    class="h-200 w-200 scale-100 object-cover object-center"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
+    />
+    <Image
+    src={logo2}
+    alt='logo 2'
+    class="h-200 w-200 scale-100 object-cover object-center"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
+    />
+    <Image
+    src={logo3}
+    alt='logo 3'
+    class="h-200 w-200 scale-100 object-cover object-center"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
+    />
+    <Image
+    src={logo4}
+    alt='logo 4'
+    class="h-200 w-200 scale-100 object-cover object-center"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
+    />
+    <Image
+    src={logo5}
+    alt='logo 5'
+    class="h-200 w-200 scale-100 object-cover object-center"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
+    />
+    <Image
+    src={logo6}
+    alt='logo 6'
+    class="h-200 w-200 scale-100 object-cover object-center"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
+    />
     <!-- Second -->
    
-      <img src='https://r2.cashtech.company/stores%2F0SNTBEPTuTm4Sd9nSnGU.png'/>
+      
    
   
     <!-- Third -->
     
-        <img src='https://r2.cashtech.company/stores%2F0Zo5GaFa55dJmL82QcNF.png' />
+        
   
     
     <!-- Fourth -->
      
-      <img   src='https://r2.cashtech.company/stores%2F1RO2D0XCXqzVrKjVnJuz.png'/>
+     
      
     
   </div>
