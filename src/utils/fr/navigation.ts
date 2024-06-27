@@ -28,8 +28,8 @@ const footerLinks = [
 ];
 
 const socialLinks = {
-  facebook: "#",
-  x: "#",
+  facebook: "https://play.google.com/store/apps/details?id=app.clubedoembaixador&pcampaignid=web_share",
+  x: "https://apps.apple.com/br/app/clube-do-embaixador/id1661573170",
   github: "https://github.com/mearashadowfax/ScrewFast",
   google: "#",
   slack: "#",

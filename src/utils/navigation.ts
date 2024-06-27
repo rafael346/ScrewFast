@@ -3,7 +3,7 @@ const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Contato", url: "/contact" },
 //  { name: "Parceiros", url: "/services" },
-  { name: "Sobre", url: "/" },
+ // { name: "Sobre", url: "/" },
 ];
 // An array of links for footer
 const footerLinks = [
@@ -27,11 +27,9 @@ const footerLinks = [
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  facebook: "https://play.google.com/store/apps/details?id=app.clubedoembaixador&pcampaignid=web_share",
+  x: "https://apps.apple.com/br/app/clube-do-embaixador/id1661573170",
+ 
 };
 
 export default {
