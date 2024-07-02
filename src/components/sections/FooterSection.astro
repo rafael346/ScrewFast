@@ -4,7 +4,8 @@ import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
 import EmailFooterInput from "@components/ui/forms/input/EmailFooterInput.astro";
 import enStrings from "@utils/navigation.ts";
 import frStrings from "@utils/fr/navigation.ts";
-import Icon from "@components/ui/icons/Icon.astro";
+import apple from "@images/app-store.png";
+import google from "@images/playstore2.png";
 import BrandLogo from "@components/BrandLogo.astro";
 import { SITE } from "@data/constants";
 import { Image } from "astro:assets";
@@ -65,11 +66,11 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
       <!-- Social Brands -->
       <div>
         <FooterSocialLink url={strings.socialLinks.facebook}
-          ><Icon name="facebookFooter" />
+          ><Image src={google} alt="google"/>
         </FooterSocialLink>
 
         <FooterSocialLink url={strings.socialLinks.x}
-          ><Icon name="xFooter" /></FooterSocialLink
+          ><Image src={apple} class="color-white" alt="apple"/></FooterSocialLink
         >
 
       </div>
